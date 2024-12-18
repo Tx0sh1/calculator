@@ -14,7 +14,7 @@ try:
     elif operator == "sub":
         print(first_number - second_number)
     elif operator == "div":
-        if first_number != 0:
+        if second_number != 0:
             print(first_number / second_number)
         else:
             print("cannot divide by zero")
@@ -22,7 +22,8 @@ try:
         print(first_number * second_number)
     else:
         print(f"{operator} is not valid, please enter a valid operator")
-except:
-    ValueError("Enter a number")
+except ValueError:
+    ("Enter a number")
+    exit()
     
     
